@@ -1,0 +1,119 @@
+:root{
+    --header-color: #0031b8;
+    --nav-color: #596da5;
+    --font-family: Arial, Helvetica, sans-serif;
+
+    /*menu*/
+    --mouse-is-over-menu: linear 0.2s;
+    --mouse-is-hover-menu:color  0.2s linear 0.2s;
+
+    /*elementos normales*/
+
+    --mouse-is-over-normal: linear 0.1s;
+    --mouse-is-hover-mormal:color  0.1s linear 0.1s;
+    
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    background-color: var(--header-color);
+    color: white;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 3em;
+}
+
+nav{
+    background-color: var(--nav-color);
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+ul>*{
+    margin-left: 1em;
+}
+ul>li>a{
+    color: white;
+    text-decoration: none;
+    transition: var(--mouse-is-over-menu);
+}
+ul>li>a:hover{
+    transition: var(--mouse-is-hover-menu);
+    color: black;
+    font-weight: bolder;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+fieldset{
+    margin-top: 2em;
+    width: 40%;
+    border-color: transparent;/*borrar color de los bordes*/
+}
+fieldset>*{
+    margin-bottom: 1em;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.botones>*{
+    margin: 2.5em;
+    width: 100px;
+    height: 40px;
+    transition: var(--mouse-is-over-normal);
+}
+.botones>*:hover{
+    color: white;
+    background-color: black;
+    transition: var(--mouse-is-hover-mormal);
+}
+
+
+
+footer{
+    padding: 1em;
+    background-color: black;
+    color: white;
+    font-size: var(--font-size-special);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #22edb4;
+    font-weight: bold;
+    transition: var(--mouse-is-over-normal);
+}
+
+footer a:hover{
+    background-color: white;
+    color: black;
+    transition: var(--mouse-is-hover-mormal);
+}
+
+
+
+
